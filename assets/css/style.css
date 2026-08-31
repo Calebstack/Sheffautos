@@ -149,23 +149,32 @@ ul {
 .badge-tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1.1rem;
-  background-color: var(--primary-red-light);
+  gap: 0.6rem;
+  padding: 0.5rem 1.25rem;
+  background: linear-gradient(135deg, rgba(214, 0, 28, 0.08) 0%, rgba(214, 0, 28, 0.03) 100%);
   color: var(--primary-red);
-  font-weight: 700;
-  font-size: 0.85rem;
+  font-weight: 800;
+  font-size: 0.88rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   border-radius: var(--radius-full);
-  margin-bottom: 1rem;
-  border: 1px solid rgba(214, 0, 28, 0.18);
-  transition: var(--transition-fast);
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(214, 0, 28, 0.22);
+  box-shadow: 0 4px 14px rgba(214, 0, 28, 0.08);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+}
+
+.badge-tag i {
+  font-size: 1rem;
+  color: var(--primary-red);
+  filter: drop-shadow(0 2px 4px rgba(214, 0, 28, 0.3));
 }
 
 .badge-tag:hover {
-  background-color: rgba(214, 0, 28, 0.15);
-  transform: scale(1.02);
+  background: rgba(214, 0, 28, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(214, 0, 28, 0.18);
 }
 
 .section-title {
@@ -984,6 +993,26 @@ ul {
     gap: 2.5rem;
   }
   
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .badge-tag {
+    margin: 0 auto 1.25rem;
+    font-size: 0.82rem;
+    padding: 0.45rem 1.15rem;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
   .hero-title {
     font-size: 2.8rem;
   }
@@ -1033,7 +1062,7 @@ ul {
   .nav-links.mobile-open {
     display: flex;
     flex-direction: column;
-    position.absolute;
+    position: absolute;
     top: 84px;
     left: 0;
     width: 100%;
